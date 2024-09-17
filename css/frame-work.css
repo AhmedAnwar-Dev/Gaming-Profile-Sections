@@ -1,0 +1,29 @@
+.green-speacial {
+  color: var(--green-color);
+  font-weight: bold;
+}
+.green-black-speacial {
+  color: #4caf50;
+  font-weight: bold;
+}
+.bink-speacial {
+  color: #ea3a84;
+  font-weight: bold;
+}
+.blue-speacial {
+  color: #2196f3;
+  font-weight: bold;
+}
+.speacial-heading {
+  background-color: #607D8B;
+  color: white;
+  width: fit-content;
+  padding: 13px;
+  margin: 5px 0 0;
+}
+@media (max-width: 991px) {
+  .speacial-heading {
+    font-size: 15px;
+    padding: 7px;
+  }
+}

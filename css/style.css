@@ -1,0 +1,216 @@
+/* Start Varibles */
+:root {
+  --main-color: #607d8b;
+  --green-color: #009688;
+  --font-color: #777;
+}
+/* End Varibles */
+/* Start Golbal */
+body {
+  margin: 20px;
+  background-color: #eee;
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+.continer {
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 1px 5px #00000052;
+  background-color: white;
+  width: 90%;
+}
+/* Small Screen */
+@media (min-width: 768px) {
+  .continer {
+    width: 760px;
+  }
+}
+/* Meduim Screen */
+@media (min-width: 992px) {
+  .continer {
+    width: 970px;
+  }
+}
+/* Large Screen */
+@media (min-width: 1200px) {
+  .continer {
+    width: 1170px;
+  }
+}
+/* End Golbal */
+/* Strat Profile */
+.profile .continer {
+  display: flex;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .profile .continer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.profile .date {
+  padding: 10px;
+  border-right: solid #f6f6f6 2px;
+  margin-right: 22px;
+  flex-basis: 182px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .profile .date {
+    border: none;
+  }
+}
+.profile .your-content .image {
+  width: 140px;
+  height: 140px;
+}
+.profile .your-content .image img {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 5px #f6f6f6 solid;
+}
+.profile .info h2{
+  margin: 10px 0 0;
+  font-size: 20px;
+}
+.profile .info .load {
+  width: 100%;
+  height: 20px;
+  background: #eee;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.profile .info .load .loading {
+  background-color: var(--green-color);
+  width: 80%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.profile .info p {
+  font-size: 13px;
+  color: var(--font-color);
+}
+.profile .content h1 {
+  margin: 0;
+}
+.profile .content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--font-color);
+}
+.profile .content p:last-child {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  font-size: 11px;
+}
+/* End Profile */
+/* Start Points Log */
+.points-log .continer p:not(:last-child) {
+  color: var(--font-color);
+  border-bottom: 2px solid #f6f6f5;
+  padding: 10px;
+}
+@media (max-width: 991px) {
+  .points-log .continer p {
+    font-size: 13px;
+  }
+}
+.points-log .continer p:last-child {
+  color: var(--font-color);
+  padding: 10px 10px 0;
+}
+/* End Points Log */
+/* Start Trophies */
+.trophis .float {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.trophis .float .image {
+  width: calc(93% / 12);
+}
+.trophis .float .image:last-child {
+  display: none;
+}
+@media (max-width: 991px) {
+  .trophis .float .image {
+    width: calc(90% / 5);
+  }
+  .trophis .float .image:last-child {
+    display: block;
+  }
+}
+.trophis .float .image:nth-child(7) img {
+  opacity: .1;
+}
+.trophis .float .image:nth-child(10) img {
+  opacity: .1;
+}
+.trophis .float .image:nth-child(13) img {
+  opacity: .1;
+}
+.trophis .float .image:nth-child(15) img {
+  opacity: .1;
+}
+.trophis .float .image:nth-child(18) img {
+  opacity: .1;
+}
+.trophis .float .image:hover img {
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+.trophis .float .image img {
+  transition: .5s;
+  max-width: 100%;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+/* End Trophies */
+.lader .continer p {
+  color: var(--font-color);
+}
+@media (max-width: 767px) {
+  .lader .continer p {
+    font-size: 14px;
+  }
+}
+/* Start Your Powers */
+.your-powers .continer p:not(:last-child) {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f6f6f5;
+  color: var(--font-color);
+}
+@media (max-width: 767px) {
+  .your-powers .continer p {
+    font-size: 13px;
+  }
+}
+.your-powers .continer p:last-child {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--font-color);
+}
+/* End Your Powers */
